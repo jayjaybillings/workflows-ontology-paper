@@ -14,59 +14,39 @@
 \usepackage{tabu}
 
 % Conference info
-\acmConference[OpenSuCo 2017]{2017 Workshop on Open Source Supercomputing}{November 2017}{Denver, Colorado USA}
+\acmConference[Short name]{Long name}{November 2017}{Denver, Colorado USA}
 \acmYear{2017}
 \copyrightyear{2017}
 
 
 \begin{document}
 
-\title{Toward Common Components for Open Workflow Systems}
+\title{A Comprehensive Ontology for Scientific Workflows}
 
 \author{Jay Jay Billings}
 \orcid{orcid.org/0000-0001-8811-2688}
 \affiliation{
-\institution{Oak Ridge National Laboratory and The Bredesen Center for Interdisciplinary Research and Graduate Education, The University of Tennessee - Knoxville}
+\institution{Oak Ridge National Laboratory}
+\institution{The Bredesen Center for Interdisciplinary Research and Graduate Education, The University of Tennessee - Knoxville}
 \streetaddress{PO Box 2008 MS 6173}
 \city{Oak Ridge}
 \state{TN}
 \country{USA}
 \postcode{37831}}
-\email{billingsjj@ornl.gov\\ Twitter: @jayjaybillings} 
+\email{billingsjj@ornl.gov \\ Twitter: @jayjaybillings} 
 
-\author{Shantenu Jha}
-\affiliation{
-\institution{Computational Science Initiative, Brookhaven National Laboratory and Rutgers University}
-\city{Upton}
-\state{NY}
-\country{USA}
-\postcode{11973}}
-\email{shantenu.jha@rutgers.edu}
+%\author{Shantenu Jha}
+%\affiliation{
+%\institution{Computational Science Initiative, Brookhaven National Laboratory and Rutgers University}
+%\city{Upton}
+%\state{NY}
+%\country{USA}
+%\postcode{11973}}
+%\email{shantenu.jha@rutgers.edu}
 
 \begin{abstract}
 
-The role of scalable high-performance workflows and flexible workflow
-management systems that can support multiple simulations will continue to
-increase in importance. For example, with the end of Dennard scaling, there is
-a need to substitute a single long running simulation with multiple repeats of
-shorter simulations, or concurrent replicas. Further, many scientific problems
-involve ensembles of simulations in order to solve a higher-level problem or
-produce statistically meaningful results. However most supercomputing software
-development and performance enhancements have focused on optimizing single-
-simulation performance. On the other hand, there is a strong inconsistency in
-the definition and practice of workflows and workflow management systems. This
-inconsistency often centers around the difference between several different
-types of workflows, including modeling and simulation, grid, uncertainty
-quantification, and purely conceptual workflows. This work explores this
-phenomenon by examining the different types of workflows and workflow
-management systems, reviewing the perspective of a large supercomputing
-facility, examining the common features and problems of workflow management
-systems, and finally presenting a proposed solution based on the concept of
-common building blocks. The implications of the continuing proliferation of
-workflow management systems and the lack of interoperability between these
-systems are discussed from a practical perspective. In doing so, we have begun
-an investigation of the design and implementation of open workflow systems for
-supercomputers based upon common components.
+
 \end{abstract}
 
 \maketitle
@@ -81,13 +61,25 @@ United States Government purposes. The Department of Energy will provide
 public access to these results of federally sponsored research in accordance
 with the DOE Public Access Plan (http://energy.gov/downloads/doe-public-access-plan).
 
-\input{introduction}
-\input{workflows-review}
-\input{experience}
-\input{common}
-\input{buildingblocks}
-\input{discussion}
+Intro:
+What's the hook?
+What are the contributions?
+
+Background:
+Workflows, etc. - Short, then point to longer discussion in the appendix.
+Ontologies - Semantic Web, {RDF,RDFS,OWL}, CWL, ICE data structures
+
+Results:
+Strategy - Merge CWL and ICE. Develop - if needed - optimization ontology components
+Discuss final product. Point to any additional appendices instead of including in the body.
+
+Case Studies:
+Data/Analysis - ICEMAN
+M&S - AM?
+Optimization - AM or QC?
+
 \input{ack}
+\input{appendix}
 
 % The bibliography 
 \bibliographystyle{ACM-Reference-Format}
